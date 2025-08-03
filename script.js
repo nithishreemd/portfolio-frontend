@@ -157,7 +157,6 @@ const typed = new Typed(".multiple-text", {
 });
 
 // ✅ Contact form submission to backend
-// // Contact form submission to backend
 const form = document.getElementById('contact-form');
 const msgSpan = document.getElementById('msg');
 
@@ -173,7 +172,7 @@ form.addEventListener('submit', async (e) => {
     };
 
     try {
-        const res = await fetch('http://localhost:5000/api/contact', {
+        const res = await fetch('https://portfolio-backend-mfr6.onrender.com/api/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
